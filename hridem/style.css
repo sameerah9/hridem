@@ -1,0 +1,42 @@
+body.section{
+ margin:0;
+ height:100vh;
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+ align-items:center;
+ background:linear-gradient(120deg,#1b0f18,#2b1628,#1b0f18);
+ color:white;
+ font-family:cursive;
+ text-align:center;
+}
+
+/* title */
+h1{
+ font-size:42px;
+ margin-bottom:30px;
+ animation:fade 2s forwards;
+ opacity:0;
+}
+
+/* button */
+button{
+ padding:14px 34px;
+ font-size:18px;
+ border:none;
+ border-radius:40px;
+ background:#ff7a9c;
+ color:white;
+ cursor:pointer;
+ box-shadow:0 10px 30px rgba(0,0,0,.3);
+ transition:.3s;
+}
+
+button:hover{
+ transform:scale(1.08);
+ background:#ff4f7c;
+}
+
+@keyframes fade{
+ to{opacity:1;}
+}
